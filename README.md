@@ -38,22 +38,18 @@ Mitigations used when needed:
 ## Files 
 
 offine_engine.py
-
-Offline driver that chunk-feeds input and writes offline_out.wav.
+- Offline driver that chunk-feeds input and writes offline_out.wav.
 
 InjectionStreamer.py, InjectionState.py
-
-Core “audio injection” logic: maintains state, mixes inputs/feedback, encodes to tokens, calls model generation, handles crossfade, etc.
+- Core “audio injection” logic: maintains state, mixes inputs/feedback, encodes to tokens, calls model generation, handles crossfade, etc.
 
 engine.py
-
-Model wrapper: loads Magenta RT system + SpectroStream and exposes generate_chunk
+- Model wrapper: loads Magenta RT system + SpectroStream and exposes generate_chunk
 
 config_store.py
-
-Minimal replacement for Colab UI parameter store; provides make_default_config
+- Minimal replacement for Colab UI parameter store; provides make_default_config
 
 crossfade.py, constant.py, prompt_types.py
-Utility modules / constants.
+-Utility modules / constants.
 
 
